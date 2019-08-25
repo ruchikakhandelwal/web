@@ -189,6 +189,7 @@ html {
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
+  padding-top: 14px;
 }
 
 .timeline > li.timeline-inverted > .timeline-panel {
@@ -256,4 +257,13 @@ html {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+
+.shadow {
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.slideAnimate {
+  visibility: visible; animation-delay: 0.4ss; animation-name: bounceInUp;
 }

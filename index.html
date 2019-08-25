@@ -10,12 +10,20 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
+    <link href="css/main.css" rel="stylesheet">
+    
     <!-- Custom styles for this template -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
+    <script src="wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    
 
 </head>
 
@@ -30,7 +38,6 @@
             <a class="py-2 d-none d-md-inline-block" href="#skills">Skills</a>
             <a class="py-2 d-none d-md-inline-block" href="#experience">Experience</a>
             <a class="py-2 d-none d-md-inline-block" href="#portfolio">Portfolio</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Blog</a>
             <a class="py-2 d-none d-md-inline-block" href="#contact">Contact</a>
         </div>
     </nav>
@@ -49,7 +56,7 @@
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="aboutme">
         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 py-3 text-center text-white"></div>
-            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 345px; border-radius: 21px 21px 0 0; bottom: 0;">
+            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 345px; border-radius: 21px 21px 0 0; bottom: 0; ">
                 <img src="images/me.png" height="345px"/>
             </div>
         </div>
@@ -145,11 +152,11 @@
                 </div>
             </div>
         </div>
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center" >
             <div class="my-3 py-3">
                 <h2 class="display-5">Tools</h2>
             </div>
-            <div class="bg-white shadow-sm mx-auto"
+            <div class="bg-white shadow-sm mx-auto fadeInUp"
                 style="width: 80%; height: auto; min-height: 350px; border-radius: 21px 21px 21px 21px; padding: 15px; ">
                 <figure class="figure col-3">
                     <img src="images/sketch.png" class="figure-img img-fluid rounded" alt="Sketch" width="80px">
@@ -181,80 +188,82 @@
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="experience">
         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-            <div class="my-3 p-3">
-                <h2 class="display-5">Experience & Education</h2>
+            <div data-wow-delay="0.4s" class="overflow-hidden wow bounceInUp center slideAnimate">
+                <div class="my-3 p-3">
+                        <h2 class="display-5">Experience & Education</h2>
+                </div>
+                <div class="bg-white shadow-sm mx-auto"
+                    style="width: 80%; height: auto; border-radius: 21px 21px 0 0; padding: 15px;">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-badge success"><i class="fas fa-building"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Tata Consultancy Service</h4>
+                                    <h6 class="timeline-title">System Engineer</h6>
+                                    <p><small class="text-muted"><i class="glyphicon "></i>Aug, 2015 – October, 2017</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Worked on AngularJS, Javascript , jQuery, HTML5,CSS3 and other technology in various
+                                        projects like Badge Tool Creation, Delivery Excellence and Risk Management project
+                                        etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge warning"><i class="fas fa-briefcase"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Tesco HSC</h4>
+                                    <h6 class="timeline-title">Software Engineer Intern</h6>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Jan, 2015 – June,
+                                            2015</small></p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Worked on the front-end of Tesco direct (www.tesco.com/direct) website using HTML5,
+                                        CSS3, jQuery, media queries etc. to make it more responsive and eﬀective.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge danger"><i class="fas fa-graduation-cap" ></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">MNNIT Allahabad</h4>
+                                    <h6 class="timeline-title">Master of Computer Application</h6>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2012 – 2015</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge info"><i class="fas fa-school"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">KMMV, Jaipur</h4>
+                                    <h6 class="timeline-title">Bachelors of Computer Application</h6>
+                                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2009 – 2012</small>
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="bg-white shadow-sm mx-auto"
-                style="width: 80%; height: auto; border-radius: 21px 21px 0 0; padding: 15px;">
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Tata Consultancy Service</h4>
-                                <h6 class="timeline-title">System Engineer</h6>
-                                <p><small class="text-muted"><i class="glyphicon "></i>Aug, 2015 – October, 2017</small>
-                                </p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>
-                                    Worked on AngularJS, Javascript , jQuery, HTML5,CSS3 and other technology in various
-                                    projects like Badge Tool Creation, Delivery Excellence and Risk Management project
-                                    etc.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge warning"><i class="glyphicon"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">Tesco HSC</h4>
-                                <h6 class="timeline-title">Software Engineer Intern</h6>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>Jan, 2015 – June,
-                                        2015</small></p>
-                            </div>
-                            <div class="timeline-body">
-                                <p>Worked on the front-end of Tesco direct (www.tesco.com/direct) website using HTML5,
-                                    CSS3, jQuery, media queries etc. to make it more responsive and eﬀective.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-badge danger"><i class="glyphicon"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">MNNIT Allahabad</h4>
-                                <h6 class="timeline-title">Master of Computer Application</h6>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2012 – 2015</small>
-                                </p>
-                            </div>
-                            <div class="timeline-body">
-                                <p></p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-badge info"><i class="glyphicon"></i></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4 class="timeline-title">KMMV, Jaipur</h4>
-                                <h6 class="timeline-title">Bachelors of Computer Application</h6>
-                                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i>2009 – 2012</small>
-                                </p>
-                            </div>
-                            <div class="timeline-body">
-                                <p></p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
+            
         </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="portfolio">
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="portfolio" >
         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 p-3">
                 <h2 class="display-5">Portfolio</h2>
@@ -264,21 +273,21 @@
                 style="width: 80%; height: auto; border-radius: 21px 21px 0 0; padding: 15px;">
 
                 <div class="card-columns">
-                    <div class="card">
+                    <div class="card shadow">
                         <img src="images/currency-convert.png" class="card-img-top" alt="Currency Converter">
                         <div class="card-body">
                             <h5 class="card-title">Currency Converter</h5>
                             <p class="card-text">Android Application to convert currency</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card shadow">
                         <img src="images/cartoon.png" class="card-img-top" alt="Cartoon">
                         <div class="card-body">
                             <h5 class="card-title">Cartoon Design</h5>
                             <p class="card-text">I design Cartoon Images</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card shadow">
                         <img src="images/t2r-web.png" class="card-img-top" alt="TicketToRide">
                         <div class="card-body">
                             <h5 class="card-title">TicketToRide Website</h5>
@@ -287,7 +296,7 @@
                                         href="http://tickettoride.co.in/">tickettoride.co.in</a></small></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card shadow">
                         <div class="card-body">
                             <h5 class="card-title">MNNIT Website</h5>
                             <p class="card-text">Official Website of MNNIT Allahanad</p>
@@ -300,7 +309,7 @@
         </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="contact">
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="contact" >
         <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
             <div class="my-3 p-3 text-center text-white">
                 <h2 class="display-5">Contact</h2>
@@ -361,9 +370,6 @@
     </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
