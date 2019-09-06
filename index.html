@@ -5,44 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Portfolio - Ruchika Khandelwal">
     <meta name="author" content="Ruchika Khandelwal">
-    <title>Home</title>
-
+    <title>Ruchika PortFolio</title>
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
-    
-    <!-- Custom styles for this template -->
+    <!-- JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    
 
 </head>
 
 <body>
-    <nav class="site-header sticky-top py-1">
-        <div class="container d-flex flex-column flex-md-row justify-content-between">
-            <a class="py-2 logo" href="#">
-                RuchiKa
-            </a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Home</a>
-            <a class="py-2 d-none d-md-inline-block" href="#aboutme">About Me</a>
-            <a class="py-2 d-none d-md-inline-block" href="#skills">Skills</a>
-            <a class="py-2 d-none d-md-inline-block" href="#experience">Experience</a>
-            <a class="py-2 d-none d-md-inline-block" href="#portfolio">Portfolio</a>
-            <a class="py-2 d-none d-md-inline-block" href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-md navbar-dark site-header sticky-top">
+        <div class="container">
+            <a class="navbar-brand logo mr-5" href="#">RuchiKa</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarData"
+                aria-controls="navbarData" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarData">
+                <ul class="navbar-nav mx-lg-auto justify-content-center">
+                    <li class="nav-item px-3 ">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item px-3">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="position-relative overflow-hidden p-5 text-center d-none d-md-block spinner-background">
         <div class="col-md-5 mx-auto my-5 front-pad">
             <article class="spinner">
                 <span class="spin">
@@ -59,7 +69,7 @@
                 <span class="pulse">
                     <!-- Small Shapes -->
                     <div class="smalls circle one"></div>
-                    <div class="smalls squircle two"></div>
+                    <div class="smalls circle two"></div>
                     <div class="smalls circle three"></div>
                     <div class="smalls squircle four"></div>
                     <div class="smalls circle five"></div>
@@ -67,8 +77,8 @@
                     <div class="smalls circle seven"></div>
                     <div class="smalls squircle eight"></div>
                 </span>
-                    <!-- Squircles -->
-                    <span class="spin-reverse">
+                <!-- Squircles -->
+                <span class="spin-reverse">
                     <div class="large squircle one"></div>
                 </span>
                 <div class="large squircle two">
@@ -81,27 +91,39 @@
             </article>
         </div>
     </div>
-
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="aboutme">
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    
+    <div class="large squircle two d-block d-md-none">
+        <div class="content">
+            <h3 class="font-weight-normal">Hello, I am</h3>
+            <h1 class="font-weight-normal">Ruchika Khandelwal</h1>
+            <p class="lead font-weight-normal">UI Designer & Web Developer</p>
+         </div>
+    </div>
+    <!-- particles.js container -->
+    <div class="d-block d-md-none" id="particles-js"></div>
+    
+    
+    
+    <div class="d-md-flex flex-md-equal w-100" id="aboutme">
+        <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 py-3 text-center text-white"></div>
             <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: 345px; border-radius: 21px 21px 0 0; bottom: 0; ">
                 <img src="images/me.png" height="345px"/>
             </div>
         </div>
-        <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden text-justify">
+        <div class="bg-primary pt-3 px-3 pt-md-5 px-md-5 overflow-hidden text-justify">
             <div class="my-3 py-3 text-center text-white">
                 <h2 class="display-5">About Me</h2>
             </div>
-            <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: auto; border-radius: 21px 21px 21px 21px; padding: 15px;">
+            <div class="bg-white shadow-sm mx-auto" style="width: 80%; height: auto; border-radius: 21px 21px 21px 21px; padding: 15px;">
                 <p><b>Hello, I’m a Ruchika Khandelwal, UI Designer & Web Developer based on Bengaluru. I have rich experience in web site design & building and customization.</b></p>
             </div>
         </div>
     </div>
 
     
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="skills">
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
+    <div class="d-md-flex flex-md-equal w-100" id="skills">
+        <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
             <div class="my-3 p-3 text-center">
                 <h2 class="display-5">Technical Skills</h2>
             </div>
@@ -112,7 +134,7 @@
                         <div class="nome">Javascript</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85"
                             aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
@@ -121,7 +143,7 @@
                         <div class="nome">ReactJS</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85"
                             aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
@@ -130,7 +152,7 @@
                         <div class="nome">AngularJS</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85"
                             aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
@@ -139,7 +161,7 @@
                         <div class="nome">ES6</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85"
                             aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
@@ -148,7 +170,7 @@
                         <div class="nome">Bootstrap</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85"
                             aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
@@ -157,7 +179,7 @@
                         <div class="nome">HTML5</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85"
                             aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
@@ -166,7 +188,7 @@
                         <div class="nome">CSS3</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85"
                             aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
@@ -175,13 +197,13 @@
                         <div class="nome">Media Queries</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85"
                             aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center" >
+        <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-center" >
             <div class="my-3 py-3">
                 <h2 class="display-5">Tools</h2>
             </div>
@@ -215,8 +237,8 @@
         </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="experience">
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="d-md-flex flex-md-equal w-100" id="experience">
+        <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div data-wow-delay="0.4s" class="overflow-hidden wow bounceInUp center slideAnimate">
                 <div class="my-3 p-3">
                         <h2 class="display-5">Experience & Education</h2>
@@ -292,8 +314,8 @@
         </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="portfolio" >
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="d-md-flex flex-md-equal w-100" id="portfolio" >
+        <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 p-3">
                 <h2 class="display-5">Portfolio</h2>
                 <p class="lead">My Works</p>
@@ -338,8 +360,8 @@
         </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3" id="contact" >
-        <div class="bg-primary mr-md-3 pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
+    <div class="d-md-flex flex-md-equal w-100" id="contact" >
+        <div class="bg-primary pt-3 px-3 pt-md-5 px-md-5 overflow-hidden">
             <div class="my-3 p-3 text-center text-white">
                 <h2 class="display-5">Contact</h2>
             </div>
@@ -359,7 +381,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="bg-light pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
             <div class="my-3 py-3">
                 <h2 class="display-5">Location</h2>
             </div>
@@ -390,7 +412,7 @@
         </div>
     </div>
 
-    <footer class="container py-5">
+    <footer class="container-fluid bg-primary py-5">
         <div class="row">
             <div class="col-12 col-md text-center">
                 <small class="d-block mb-3 text-muted">Copyright© 2019 All rights reserved</small>
@@ -398,10 +420,12 @@
         </div>
     </footer>
 
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+        
 </body>
 
 </html>

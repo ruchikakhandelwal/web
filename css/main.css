@@ -1,26 +1,20 @@
 html {
   scroll-behavior: smooth;
 }
-.container {
-  max-width: 960px;
-}
 .logo {
   font-weight: bolder;
 }
 .site-header {
-  background-color: rgba(0, 123, 255, 0.85);
+  background-color:#41228e;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
 }
-.site-header a {
-  color: rgb(230, 230, 230);
-  transition: ease-in-out color 0.15s;
+.bg-primary {
+  background-color: #41228e !important;
 }
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
+.bg-light {
+  background-color: #ffc107d9 !important;
 }
-
 .card-columns {
   @include media-breakpoint-only(lg) {
     column-count: 4;
@@ -268,17 +262,24 @@ html {
   visibility: visible; animation-delay: 0.4ss; animation-name: bounceInUp;
 }
 
+
+/* Spinner */
+
+.spinner-background{
+    background-color: #ffc107d9;
+}
 .front-pad {
-  padding: 20rem;
+  padding: 22rem;
 }
 
 .spinner {
   background: #fff;
-  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
   color: #fff;
   font-size: 28px;
 }
-span {
+.spinner span {
   display: block;
   position: absolute;
   top: calc(50% - 10em);
@@ -289,66 +290,66 @@ span {
 
 span.spin {
   -webkit-animation: spin 10s linear infinite;
-          animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
 }
 
 span.spin-reverse {
   -webkit-animation: spin 30s linear infinite;
-          animation: spin 30s linear infinite;
+  animation: spin 30s linear infinite;
 }
 
 span.pulse {
   -webkit-animation: spin-pulse 20s linear infinite;
-          animation: spin-pulse 20s linear infinite;
+  animation: spin-pulse 20s linear infinite;
 }
 
 @-webkit-keyframes spin {
   0% {
     -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   100% {
     -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
 @keyframes spin {
   0% {
     -webkit-transform: rotateZ(0);
-            transform: rotateZ(0);
+    transform: rotateZ(0);
   }
   100% {
     -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 @-webkit-keyframes spin-pulse {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
   50% {
     -webkit-transform: scale(0.9) rotateZ(180deg);
-            transform: scale(0.9) rotateZ(180deg);
+    transform: scale(0.9) rotateZ(180deg);
   }
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
 @keyframes spin-pulse {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
   50% {
     -webkit-transform: scale(0.9) rotateZ(180deg);
-            transform: scale(0.9) rotateZ(180deg);
+    transform: scale(0.9) rotateZ(180deg);
   }
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
 
@@ -357,18 +358,19 @@ span.pulse {
   left: calc(50% - 6.25em);
   top: calc(50% - 12.5em);
   -webkit-transform-origin: 50% 12.5em;
-          transform-origin: 50% 12.5em;
+  transform-origin: 50% 12.5em;
 }
 
 .squircle {
   border-radius: 25%;
 }
 
-.circle, .squircle {
+.circle,
+.squircle {
   width: 12.5em;
   height: 12.5em;
   position: absolute;
-  border-top: 0.1em solid rgba(255, 255, 255, 0.4);
+  border-top: 0 solid rgba(255, 255, 255, 0.4);
 }
 
 .large.circle {
@@ -381,56 +383,56 @@ span.pulse {
   left: calc(50% - 2em);
   top: calc(50% - 15em);
   -webkit-transform-origin: 50% 15em;
-          transform-origin: 50% 15em;
+  transform-origin: 50% 15em;
   box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
 }
 
 .one {
   background: rgba(16, 63, 236, 0.75);
   -webkit-transform: rotateZ(225deg);
-          transform: rotateZ(225deg);
+  transform: rotateZ(225deg);
 }
 
 .two {
   background: rgba(37, 172, 162, 0.75);
   -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
+  transform: rotateZ(180deg);
 }
 
 .three {
   background: rgba(233, 124, 32, 0.75);
   -webkit-transform: rotateZ(135deg);
-          transform: rotateZ(135deg);
+  transform: rotateZ(135deg);
 }
 
 .four {
   background: rgba(235, 67, 35, 0.75);
   -webkit-transform: rotateZ(90deg);
-          transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
 }
 
 .five {
   background: rgba(190, 28, 65, 0.75);
   -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
 }
 
 .six {
   background: rgba(208, 57, 159, 0.75);
   -webkit-transform: rotateZ(0);
-          transform: rotateZ(0);
+  transform: rotateZ(0);
 }
 
 .seven {
   background: rgba(150, 32, 198, 0.75);
   -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
 }
 
 .eight {
   background: rgba(95, 33, 203, 0.75);
   -webkit-transform: rotateZ(-90deg);
-          transform: rotateZ(-90deg);
+  transform: rotateZ(-90deg);
 }
 
 .smalls.squircle {
@@ -445,7 +447,7 @@ span.pulse {
   position: absolute;
   background: red;
   -webkit-transform: rotateZ(-45deg);
-          transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
   box-shadow: -0.25em 0.25em 0.5em rgba(0, 0, 0, 0.2);
 }
 .smalls.squircle.two::after {
@@ -470,16 +472,17 @@ span.pulse {
   width: 15em;
   height: 15em;
   -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 .large.squircle.one {
   -webkit-transform: rotateZ(45deg);
-          transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
 }
 
 .content {
   text-align: center;
   margin-top: 25%;
+  color: #fff;
 }
 
 .content h1 {
@@ -487,4 +490,55 @@ span.pulse {
   font-size: 1.55em;
   margin: 0.25em auto 1em;
   max-width: 10em;
+}
+
+
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
