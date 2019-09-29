@@ -583,3 +583,12 @@ span.pulse {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+.carousel-indicators {
+    filter: invert(100%);
+}
