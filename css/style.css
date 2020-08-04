@@ -376,7 +376,6 @@ td, th {
 }
 
 .page-top-banner {
-  background: url(../img/about-header.jpg);
   background-size: cover;
 }
 .page-top-banner .overlay-bg {
@@ -1508,7 +1507,7 @@ td, th {
 }
 
 .banner-section3 {
-  background: url(../img/banner3.jpg);
+  background: url(../img/banner5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1570,7 +1569,7 @@ td, th {
 }
 
 .feature-section {
-  background: url(../img/feature-bg.png) center no-repeat;
+  /*background: url(../img/feature-bg.png) center no-repeat;*/
   background-size: cover;
 }
 .feature-section .header-left h1 {
@@ -2065,7 +2064,7 @@ td, th {
 }
 .portfolio-section .single-portfolio .box-content {
   width: 100%;
-  padding: 40px 0;
+  padding: 20px 0;
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
   bottom: 0px;
