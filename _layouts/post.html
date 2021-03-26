@@ -2,7 +2,11 @@
 
 {% include menu-post.html %}
 
+{% if page.disableTitle == true %}
 {% include post-banner.html %}
+{% else %}
+{% include post-banner-title.html %}
+{% endif %}
 
 {{content}}
 

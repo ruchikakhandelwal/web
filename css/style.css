@@ -240,7 +240,7 @@ td, th {
 }
 
 .section-gap-full {
-  padding: 120px 0;
+  padding: 150px 0;
 }
 
 .section-gap-half {
@@ -379,7 +379,7 @@ td, th {
   background-size: cover;
 }
 .page-top-banner .overlay-bg {
-  opacity: .8;
+  opacity: .25;
 }
 .page-top-banner h1 {
   color: #000;
@@ -1507,13 +1507,12 @@ td, th {
 }
 
 .banner-section3 {
-  background: url(../img/banner5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 .banner-section3 .overlay-bg {
-  background: url(../img/banner-overlay.png);
+  background: url(../img/banner-overlay4.png);
   background-size: cover;
   background-repeat: no-repeat;
 }

@@ -5,9 +5,10 @@ date:   2019-10-22 21:40:17 +0530
 categories: ['portfolio', 'mobile', 'payment']
 permalink: /payment-application
 description: Pay easily for anything anywhere
+disableTitle: false
 banner: img/payment/banner.png
 ---
-<section class="product-detials-section section-gap-full">
+<section class="product-detials-section section-gap-half">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 details-left">

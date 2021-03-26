@@ -4,10 +4,11 @@ title:  "SafeSocial Application"
 date:   2020-08-04 21:40:17 +0530
 categories: ['portfolio', 'mobile', 'payment']
 permalink: /safesocial-application
-description: Makes your shopping happy and safe
+description: "Makes your shopping happy and safe"
+disableTitle: true
 banner: img/safesocial/banner.png
 ---
-<section class="product-detials-section section-gap-full">
+<section class="product-detials-section section-gap-half">
     <!-- <div class="container">
         <div class="row">
             <div class="col-lg-8 details-left">
