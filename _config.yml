@@ -21,7 +21,7 @@
 title: Ruchika Khandelwal
 email: khandelwal.ruchika1@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Ruchika Khandelwal's Portfolio, UI/UX Designer, Web Designer. I have rich experience in designing product, website, mobile application UI and prototyping.
+  UI/UX Designer, Web Designer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ruchikakhandelwal.in/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
