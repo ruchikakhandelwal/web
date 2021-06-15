@@ -243,8 +243,12 @@ td, th {
   padding: 50px 0;
 }
 
+.section-gap-blog {
+  padding: 300px 0;
+}
+
 .section-gap-half {
-  padding: 305px 0;
+  padding: 75px 0;
 }
 
 .pb-30 {
